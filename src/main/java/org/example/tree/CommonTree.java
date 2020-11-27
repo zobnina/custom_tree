@@ -68,7 +68,7 @@ public class CommonTree<T> implements Tree<T>, Iterable<T>, TraversableTree<T> {
         this.traversal = traversal;
     }
 
-    class TreeIterator implements Iterator<T>{
+    class TreeIterator implements Iterator<T> {
         private CommonNode current;
 
         public TreeIterator() {
@@ -90,7 +90,7 @@ public class CommonTree<T> implements Tree<T>, Iterable<T>, TraversableTree<T> {
         }
     }
 
-    class CommonNode implements Node<T>{
+    class CommonNode implements Node<T> {
         private final T data;
         private final ArrayList<Node<T>> childNodes;
 
